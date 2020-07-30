@@ -6,29 +6,34 @@ namespace Profesiones.Interface
 {
     public class CarpinteroMusical : ICarpintero
     {
-        public string Diseñar()
-        {
-            return "Estoy diseñando con AutoCad Versión ";
-        }
-        public string Medir()
-        {
-            return "Estoy midiendo flexómetro";
-        }
-        public string Serruchar()
-        {
-            return "Estoy serruchando con máquina y escuchando música";
-        }
         public string Clavar()
         {
-            return "Estoy clavando clavos de acero con la pistola de aire comprimido";
+            return "Estoy clavando y escuchando Trap";
         }
-        public string Lijar()
+
+        public string Diseñar()
         {
-            return "Estoy lijando con lijadora con absoción y piropeando";
+            return "Estoy diseñando y clavando";
         }
+
         public string Lacar()
         {
-            return "Estoy Estoy lacando con secado instanáneo y al mismo tiempo limpio la superficie de la pintura";
+            return "Estoy lancando y bailando";
+        }
+
+        public string Lijar()
+        {
+            return "Estoy lijando y piropeando";
+        }
+
+        public string Medir()
+        {
+            return "Estoy midiendo mientras silbo";
+        }
+
+        public string Serruchar()
+        {
+            return "Estoy serruchando con música ";
         }
     }
 }

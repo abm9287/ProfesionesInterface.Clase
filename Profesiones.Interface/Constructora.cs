@@ -1,37 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Profesiones.Interface
+﻿namespace Profesiones.Interface
 {
-    class Constructora
+    public class Constructora
     {
         public ICarpintero Carpintero { get; set; }
         public string ContratarCarpintero(ICarpintero carpintero)
         {
             Carpintero = carpintero;
-            return "Contrate un carpintero";
+            return "Contraté un carpintero";
         }
-        public string CosntruirMesa()
+        public string ConstruirMesa()
         {
-            return Carpintero.Medir() + "Mesa"+ Carpintero.Diseñar()+"mesa"+ Carpintero.Serruchar() + "mesa"+ Carpintero.Lijar() + "mesa"+ Carpintero.Lijar() + "mesa"+ Carpintero.Lacar() + "mesa";
+            return Carpintero.Diseñar() + "mesa" + Carpintero.Medir() + "mesa" + Carpintero.Clavar() + "mesa" + Carpintero.Lijar() + "mesa";
         }
         public string ContratarCarpintero()
         {
             Carpintero = new Carpintero();
-            return "Contraté un carpintero";
+            return "Contrate un Carpintero";
         }
-
         public string ContratarCarpinteroModerno()
         {
             Carpintero = new CarpinteroModerno();
-            return "Contraté un carpintero moderno";
+            return "Contrate un Carpintero moderno";
         }
-
         public string ContratarOtroCarpintero()
         {
             Carpintero = new CarpinteroMusical();
-            return "Contrate un carpintero musical";
+            return "Contrate un Carpintero musical";
         }
     }
 }
