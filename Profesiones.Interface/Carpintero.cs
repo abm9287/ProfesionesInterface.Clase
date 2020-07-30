@@ -1,0 +1,32 @@
+﻿using System;
+
+namespace Profesiones.Interface
+{
+    public partial class Carpintero
+    {
+        public string Diseñar()
+        {
+            return "Estoy diseñando";
+        }
+        public string Medir()
+        {
+            return "Estoy midiendo con metro";
+        }
+        public string Serruchar()
+        {
+            return "Estoy serruchando a pulso";
+        }
+        public string Clavar()
+        {
+            return "Estoy clavando";
+        }
+        public string Lijar()
+        {
+            return "Estoy lijando";
+        }
+        public string Lacar()
+        {
+            return "Estoy Estoy lacando";
+        }
+    }
+}
