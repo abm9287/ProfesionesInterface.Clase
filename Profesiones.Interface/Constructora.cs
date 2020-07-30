@@ -6,8 +6,7 @@ namespace Profesiones.Interface
 {
     class Constructora
     {
-        public Carpintero Carpintero { get; set; }
-        public CarpinteroModerno CarpinteroModerno { get; set; }
+        public ICarpintero Carpintero { get; set; }
         public string ContratarCarpintero()
         {
             Carpintero = new Carpintero();
@@ -16,8 +15,14 @@ namespace Profesiones.Interface
 
         public string ContratarCarpinteroModerno()
         {
-            CarpinteroModerno = new CarpinteroModerno();
+            Carpintero = new CarpinteroModerno();
             return "Contraté un carpintero moderno";
+        }
+
+        public string ContratarOtroCarpintero()
+        {
+            Carpintero = new CarpinteroMusical();
+            return "Contrate un carpintero musical";
         }
     }
 }

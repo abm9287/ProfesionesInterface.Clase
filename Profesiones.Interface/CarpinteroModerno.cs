@@ -1,6 +1,6 @@
 ﻿namespace Profesiones.Interface
 {
-        public class CarpinteroModerno
+        public class CarpinteroModerno : ICarpintero
         {
             public string Diseñar()
             {
