@@ -1,5 +1,7 @@
 ﻿using System;
-using Profesiones.Interface;
+using Profesiones.Implementacion;
+using Profesiones.Negocio;
+
 
 namespace Profesiones.Consola
 {
@@ -10,7 +12,7 @@ namespace Profesiones.Consola
             Console.WriteLine("Hello World!");
             Constructora MiConstructora = new Constructora();
 
-            MiConstructora.ContratarCarpintero(new Carpintero());
+            MiConstructora.ContratarCarpintero(new CarpinteroEstandar());
             MiConstructora.ConstruirMesa();
             MiConstructora.ContratarCarpintero(new CarpinteroModerno());
             MiConstructora.ConstruirMesa();

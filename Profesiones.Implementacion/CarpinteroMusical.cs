@@ -1,11 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Profesiones.Interface;
+using Profesiones.Entidad;
 
-namespace Profesiones.Interface
+namespace Profesiones.Implementacion
 {
+   
     public class CarpinteroMusical : ICarpintero
     {
+        //Composición
+        public Carpintero Carpintero { get; set; }
+
         public string Clavar()
         {
             return "Estoy clavando y escuchando Trap";
