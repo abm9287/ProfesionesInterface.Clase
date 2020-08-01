@@ -1,18 +1,14 @@
-﻿using System.Collections.Generic;
-using Profesiones.Interface;
+﻿using Profesiones.Interface;
+using Profesiones.Entidad;
+using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Profesiones.Implementacion
 {
-   
-    public class CarpinteroModerno : ICarpintero
+   //Por herencia
+    public class CarpinteroModerno : Carpintero, ICarpintero , IEquatable<CarpinteroModerno>
     {
-        private List<string> materialesParaClavar;//Ejemplo: clavo, tachuela => materiales para la construcción 'se usa un sustantivo' no clavar => MaterialParaClavar
-        private string nombre;//Ejemplo: Juan.
-
-        public string Nombre { get { return nombre; } set { nombre = value; } }
-        public List<string> MaterialesParaCLavar { get { return materialesParaClavar; } set { materialesParaClavar = value; } }
-
-
+       
         public string Diseñar()
         {
             return "Estoy diseñando con AutoCad";
@@ -36,6 +32,11 @@ namespace Profesiones.Implementacion
         public string Lacar()
         {
             return "Estoy lacando de secado instantáneo";
+        }
+
+        public bool Equals([AllowNull] CarpinteroModerno other)
+        {
+            return this.Id == other.Id;
         }
     }
 }

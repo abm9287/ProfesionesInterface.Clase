@@ -15,18 +15,8 @@ namespace Profesiones.Negocio
         }
         public string ContratarCarpintero()
         {
-            //Carpintero = new CarpinteroEstandar(); ToDo
             return "Contrate un Carpintero";
         }
-        public string ContratarCarpinteroModerno()
-        {
-            //Carpintero = new CarpinteroModerno(); ToDo
-            return "Contrate un Carpintero moderno";
-        }
-        public string ContratarOtroCarpintero()
-        {
-            //Carpintero = new CarpinteroMusical(); ToDo
-            return "Contrate un Carpintero musical";
-        }
+        
     }
 }
